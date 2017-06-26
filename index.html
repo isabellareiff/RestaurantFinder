@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alexis and Izzy's API Project</title>
+        <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+          <!-- Compiled and minified CSS -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+        
+          <!-- Compiled and minified JavaScript -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <link rel="stylesheet" href="style.css" >
+    </head>
+
+    <body>
+        <div class="container row center"><h1>Restaurant Finder</h1></div>
+        <div class="container row center"><h3>Search for a city and get suggestions!</h3></div>
+        <div class="white container">
+                    <form onsubmit="{getDataFromApi()};return false">
+                      <div class="input-field">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" id="search"><i class="material-icons">local_cafe</i></label>
+                        <i class="material-icons" type="button" onclick="{clearFields()};">close</i>
+                      </div>
+                    </form>
+                  </div>
+        <div class="container">
+            <div class="section">
+              <div class="row">
+                <div class="col s12 center">
+                  <h4>Hit enter to view results</h4>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="container row">
+        <div id = "result"></div>
+      </div>
+    <script src="script.js"></script>
+    </body>
+</html>

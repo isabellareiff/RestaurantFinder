@@ -9,73 +9,66 @@ function getDataFromApi(){
     var options = {
         headers: myHeaders
     }
-    
-    fetch( url, options) // Fetch issues GET requests
-    
+    fetch (url, options) // Fetch issues GET requests
     .then ( function(data) {
         return data.json() ;
     })
-    
     .then(function(json){
         console.log(json)
         var lat = json.location_suggestions["0"].latitude;
         var lon = json.location_suggestions["0"].longitude;
         var url2 = "https://developers.zomato.com/api/v2.1/geocode?lat="+lat+"&lon="+lon;
         fetch (url2, options)
-        
         .then (function(data){
             return data.json();
         })
-        
         .then(function (json){
             console.log(json);
             var finalHTML = '';
-            
                 for (var i = 0; i < 8; i++){
                     finalHTML +=   `
                     <div class="col s3 m3">    
-                      <div class="blue card medium">
+                      <div class="deep-purple darken-2 card medium">
                         <div class="card-image waves-effect waves-block waves-light">
                           <img class="activator" src="${json.nearby_restaurants[i].restaurant.thumb}">
                         </div>
                         <div class="card-content">
                           <span class="card-title activator white-text text-darken-4">${json.nearby_restaurants[i].restaurant.name}<i class="material-icons right">more_vert</i></span>
-                          
                         </div>
                         <div class="card-reveal">
                           <span class="card-title grey-text text-darken-4">Rated ${json.nearby_restaurants[i].restaurant.user_rating.aggregate_rating}/5<i class="material-icons right">close</i></span>
-                          <p>based on ${json.nearby_restaurants[i].restaurant.user_rating.votes} votes</p>
+                          <p>Based on ${json.nearby_restaurants[i].restaurant.user_rating.votes} votes</p>
                           
                           <span class="card-title grey-text text-darken-4">Cuisine Style</span>
                           <p>${json.nearby_restaurants[i].restaurant.cuisines}</p>
                           
                           <span class="card-title grey-text text-darken-4">Average cost for two people</span>
                           <p>$${json.nearby_restaurants[i].restaurant.average_cost_for_two}</p>
+                          
+                          <span class="card-title grey-text text-darken-4">Located in</span>
+                          <p>${json.nearby_restaurants[i].restaurant.location.locality}</p>
+                          
+                          <span class="card-title grey-text text-darken-4">Address</span>
+                          <p>${json.nearby_restaurants[i].restaurant.location.address}</p>
                         </div>
-                        
                         <div class="card-action">
-                          <a class = "white-text" href="${json.nearby_restaurants[i].restaurant.menu_url}" target = "_blank">See the full menu!</a>
+                          <a class = "white-text" href="${json.nearby_restaurants[i].restaurant.menu_url}" target = "_blank">See the full menu</a>
                         </div>
                       </div>
                     </div>`
                 }
             var resultDiv = document.getElementById('result')
             resultDiv.innerHTML = finalHTML
-            
             document.getElementById('search').blur();
         })
-        
         .catch(function(error){
             console.log(error);
-        })
-        
+        })  
     })
-
     .catch(function(error){
         console.log(error)
     })
 }
-
 function clearFields() {
      document.getElementById("search").value = "";
 }

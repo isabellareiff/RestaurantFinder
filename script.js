@@ -25,7 +25,11 @@ function getDataFromApi(){
         .then(function (json){
             console.log(json);
             var finalHTML = '';
-                for (var i = 0; i < 8; i++){
+            var length = json.nearby_restaurants.length;
+            if (length > 8){
+                length = 8;
+            }
+                for (var i = 0; i < length; i++){
                     finalHTML +=   `
                     <div class="col s3 m3">    
                       <div class="deep-purple darken-2 card medium">

@@ -29,7 +29,7 @@ function getDataFromApi(){
             if (length > 8){
                 length = 8;
             }
-            finalHTML +=   `<div class="center-align"><h4>Showing ${length} Results From ${json.location.city_name}</h4></div>
+            finalHTML +=   `<div class="center-align"><h4><small>Showing ${length} Results From ${json.location.city_name}</small></h4></div>
 <br><br>`
                 for (var i = 0; i < length; i++){
                     finalHTML +=   `

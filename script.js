@@ -31,7 +31,8 @@ function getDataFromApi(){
             }
                 for (var i = 0; i < length; i++){
                     finalHTML +=   `
-                    <div class="text-center"><strong>Results From ${json.location.city_name}</strong></div>
+                    <div class="text-center"><strong>Showing ${length} Results From ${json.location.city_name}</strong></div>
+<br><br>
                     <div class="col s3 m3">    
                       <div class="deep-purple darken-2 card medium">
                         <div class="card-image waves-effect waves-block waves-light">

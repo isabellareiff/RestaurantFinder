@@ -34,7 +34,7 @@ function getDataFromApi(){
                 for (var i = 0; i < length; i++){
                     finalHTML +=   `
                     <div class="col s3 m3">    
-                      <div class="deep-purple darken-2 card medium">
+                      <div class="card medium">
                         <div class="card-image waves-effect waves-block waves-light">
                           <img class="activator" src="${json.nearby_restaurants[i].restaurant.thumb}">
                         </div>

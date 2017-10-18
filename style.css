@@ -9,7 +9,18 @@ background-color: #ffffff;
 .material-icons {
 color: #890009;
 }
-
+.card-title{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+}
+.card-action{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+}
+p{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+}
 /* Isabella's Restaurant Finder */
 h1 {
     color: #ffffff;

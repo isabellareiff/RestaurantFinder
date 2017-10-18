@@ -13,19 +13,23 @@ color: #890009;
 /* Isabella's Restaurant Finder */
 h1 {
     color: #ffffff;
+    font-family: 'Fascinate Inline', cursive;
 }
 
 /* Search a city and get suggestions! */
 h3 {
     color: #ffffff;
+    font-family: 'Oswald', sans-serif;
 }
 
 /* Hit enter to view results */
 h4 {
+    font-family: 'Oswald', sans-serif;
     color: #ffffff;
 }
 
 /* Showing # results from Place */
 h5 {
+    font-family: 'Oswald', sans-serif;
     color: #ffffff;
 }

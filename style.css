@@ -27,10 +27,12 @@ h3 {
 h4 {
     font-family: 'Oswald', sans-serif;
     color: #ffffff;
+    letter-spacing: 2px;
 }
 
 /* Showing # results from Place */
 h5 {
     font-family: 'Oswald', sans-serif;
     color: #ffffff;
+    letter-spacing: 2px;
 }

@@ -1,5 +1,5 @@
 body {
-    background-color: #FFFAEC;
+    background-color: #000000;
 }
 
 .input-field {
@@ -10,14 +10,22 @@ background-color: #e0f7fa;
 color: #009688;
 }
 
+/* Isabella's Restaurant Finder */
 h1 {
     color: #00695c
 }
 
+/* Search a city and get suggestions! */
 h3 {
     color: #00897b;
 }
 
+/* Hit enter to view results */
 h4 {
     color: #26a69a;
+}
+
+/* Showing # results from Place */
+h5 {
+    color: #ffffff;
 }

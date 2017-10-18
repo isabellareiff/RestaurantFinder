@@ -1,28 +1,28 @@
 body {
-    background-color: #000000;
+    background-color: #890009;
 }
 
 .input-field {
-background-color: #e0f7fa;
+background-color: #ffffff;
 }
 
 .material-icons {
-color: #009688;
+color: #890009;
 }
 
 /* Isabella's Restaurant Finder */
 h1 {
-    color: #00695c
+    color: #d7fff1;
 }
 
 /* Search a city and get suggestions! */
 h3 {
-    color: #00897b;
+    color: #b2ffa9;
 }
 
 /* Hit enter to view results */
 h4 {
-    color: #26a69a;
+    color: #2da347;
 }
 
 /* Showing # results from Place */

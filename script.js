@@ -34,18 +34,18 @@ function getDataFromApi(){
                 for (var i = 0; i < length; i++){
                     finalHTML +=   `
                     <div class="col s3 m3">    
-                      <div class="card medium">
+                      <div class="card red accent-4 medium">
                         <div class="card-image waves-effect waves-block waves-light">
                           <img class="activator" src="${json.nearby_restaurants[i].restaurant.thumb}">
                         </div>
                         <div class="card-content">
-                          <span class="card-title activator red-text text-darken-4">${json.nearby_restaurants[i].restaurant.name}<i class="material-icons right">more_vert</i></span>
+                          <span class="card-title activator white-text">${json.nearby_restaurants[i].restaurant.name}<i class="material-icons right">more_vert</i></span>
                         </div>
                         <div class="card-reveal">
-                          <span class="card-title red-text">Rated ${json.nearby_restaurants[i].restaurant.user_rating.aggregate_rating}/5<i class="material-icons right">close</i></span>
+                          <span class="card-title red-text text-darken-4">Rated ${json.nearby_restaurants[i].restaurant.user_rating.aggregate_rating}/5<i class="material-icons right">close</i></span>
                           <p>Based on ${json.nearby_restaurants[i].restaurant.user_rating.votes} votes</p>
                           
-                          <span class="card-title red-text">Cuisine Style</span>
+                          <span class="card-title red-text text-darken-4xt">Cuisine Style</span>
                           <p>${json.nearby_restaurants[i].restaurant.cuisines}</p>
                           
                           <span class="card-title red-text text-darken-4">Average cost for two people</span>
@@ -58,7 +58,7 @@ function getDataFromApi(){
                           <p>${json.nearby_restaurants[i].restaurant.location.address}</p>
                         </div>
                         <div class="card-action">
-                          <a class = "red-text" href="${json.nearby_restaurants[i].restaurant.menu_url}" target = "_blank">See the full menu</a>
+                          <a class = "red-text text-darken-4" href="${json.nearby_restaurants[i].restaurant.menu_url}" target = "_blank">See the full menu</a>
                         </div>
                       </div>
                     </div>`

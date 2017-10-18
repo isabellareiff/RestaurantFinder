@@ -23,10 +23,8 @@ p{
 }
 /* Isabella's Restaurant Finder */
 h1 {
-    font-size: 2.5em;
     color: #ffffff;
-    /*font-family: 'Fascinate Inline', cursive;*/
-    font-family: 'Kranky', cursive;
+    font-family: 'Fascinate Inline', cursive;
 }
 
 /* Search a city and get suggestions! */

@@ -30,7 +30,7 @@ function getDataFromApi(){
                 length = 8;
             }
             finalHTML +=   `<div class="center-align"><h5>Showing ${length} Results From ${json.location.city_name}</h5></div>
-<br><br>`
+<br>`
                 for (var i = 0; i < length; i++){
                     finalHTML +=   `
                     <div class="col s3 m3">    

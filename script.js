@@ -42,10 +42,10 @@ function getDataFromApi(){
                           <span class="card-title activator red-text text-darken-4">${json.nearby_restaurants[i].restaurant.name}<i class="material-icons right">more_vert</i></span>
                         </div>
                         <div class="card-reveal">
-                          <span class="card-title white-text">Rated ${json.nearby_restaurants[i].restaurant.user_rating.aggregate_rating}/5<i class="material-icons right">close</i></span>
+                          <span class="card-title red-text">Rated ${json.nearby_restaurants[i].restaurant.user_rating.aggregate_rating}/5<i class="material-icons right">close</i></span>
                           <p>Based on ${json.nearby_restaurants[i].restaurant.user_rating.votes} votes</p>
                           
-                          <span class="card-title white-text">Cuisine Style</span>
+                          <span class="card-title red-text">Cuisine Style</span>
                           <p>${json.nearby_restaurants[i].restaurant.cuisines}</p>
                           
                           <span class="card-title red-text text-darken-4">Average cost for two people</span>
@@ -54,11 +54,11 @@ function getDataFromApi(){
                           <span class="card-title red-text text-darken-4">Located in</span>
                           <p>${json.nearby_restaurants[i].restaurant.location.locality}</p>
                           
-                          <span class="card-title grey-text text-darken-4">Address</span>
+                          <span class="card-title red-text text-darken-4">Address</span>
                           <p>${json.nearby_restaurants[i].restaurant.location.address}</p>
                         </div>
                         <div class="card-action">
-                          <a class = "white-text" href="${json.nearby_restaurants[i].restaurant.menu_url}" target = "_blank">See the full menu</a>
+                          <a class = "red-text" href="${json.nearby_restaurants[i].restaurant.menu_url}" target = "_blank">See the full menu</a>
                         </div>
                       </div>
                     </div>`

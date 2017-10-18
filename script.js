@@ -39,19 +39,19 @@ function getDataFromApi(){
                           <img class="activator" src="${json.nearby_restaurants[i].restaurant.thumb}">
                         </div>
                         <div class="card-content">
-                          <span class="card-title activator white-text text-darken-4">${json.nearby_restaurants[i].restaurant.name}<i class="material-icons right">more_vert</i></span>
+                          <span class="card-title activator red-text text-darken-4">${json.nearby_restaurants[i].restaurant.name}<i class="material-icons right">more_vert</i></span>
                         </div>
                         <div class="card-reveal">
-                          <span class="card-title grey-text text-darken-4">Rated ${json.nearby_restaurants[i].restaurant.user_rating.aggregate_rating}/5<i class="material-icons right">close</i></span>
+                          <span class="card-title white-text">Rated ${json.nearby_restaurants[i].restaurant.user_rating.aggregate_rating}/5<i class="material-icons right">close</i></span>
                           <p>Based on ${json.nearby_restaurants[i].restaurant.user_rating.votes} votes</p>
                           
-                          <span class="card-title grey-text text-darken-4">Cuisine Style</span>
+                          <span class="card-title white-text">Cuisine Style</span>
                           <p>${json.nearby_restaurants[i].restaurant.cuisines}</p>
                           
-                          <span class="card-title grey-text text-darken-4">Average cost for two people</span>
+                          <span class="card-title red-text text-darken-4">Average cost for two people</span>
                           <p>$${json.nearby_restaurants[i].restaurant.average_cost_for_two}</p>
                           
-                          <span class="card-title grey-text text-darken-4">Located in</span>
+                          <span class="card-title red-text text-darken-4">Located in</span>
                           <p>${json.nearby_restaurants[i].restaurant.location.locality}</p>
                           
                           <span class="card-title grey-text text-darken-4">Address</span>

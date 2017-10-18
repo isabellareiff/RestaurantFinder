@@ -58,7 +58,7 @@ function getDataFromApi(){
                           <p>${json.nearby_restaurants[i].restaurant.location.address}</p>
                         </div>
                         <div class="card-action">
-                          <a class = "red-text text-darken-4" href="${json.nearby_restaurants[i].restaurant.menu_url}" target = "_blank">See the full menu</a>
+                          <a class = "white-text" href="${json.nearby_restaurants[i].restaurant.menu_url}" target = "_blank">See the full menu</a>
                         </div>
                       </div>
                     </div>`
